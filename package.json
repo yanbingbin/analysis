@@ -1,9 +1,9 @@
 {
   "name": "ym-analysis",
   "description": "a plugin about anylysis",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "yanbb",
-  "main": "dist/ym-analysis.js",
+  "main": "src/index.js",
   "license": "MIT",
   "private": false,
   "scripts": {
