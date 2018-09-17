@@ -1,7 +1,7 @@
 {
   "name": "ym-analysis",
   "description": "a plugin about anylysis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "yanbb",
   "main": "dist/ym-analysis",
   "license": "MIT",
