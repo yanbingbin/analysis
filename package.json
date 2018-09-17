@@ -1,9 +1,9 @@
 {
   "name": "ym-analysis",
   "description": "a plugin about anylysis",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "author": "yanbb",
-  "main": "dist/ym-analysis",
+  "main": "dist/ym-analysis.js",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -14,6 +14,10 @@
   	"type": "git",
   	"url": "git+https://github.com/echo-lu/mini-sliders.git"
   },
+  "files": [
+  	"dist",
+  	"src"
+  ],
   "dependencies": {
     "vue": "^2.5.11"
   },
