@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import analysis from './directives/analysis/directive.js'
+import analysisDirective from './directives/analysis/directive.js'
 
 let analysis = {};
 
@@ -7,7 +7,7 @@ let analysis = {};
  * 注册所有指令
  */
 analysis.install = function(){
-    Vue.directive('analysis', analysis);
+    Vue.directive('analysis', analysisDirective);
 };
 
 const addItem = function(value) {
