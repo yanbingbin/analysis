@@ -1,3 +1,5 @@
 每次发布前修改package.json里面的版本号
 记得把代码提交到github上
+ git add .    git commit -m '修改的内容备注'   git push origin master
+
 使用npm publish发布

@@ -1,10 +1,11 @@
+import Vue from 'vue'
 let analysis = {
 	bind(el, binding,vnode) {//被绑定
 		el.addEventListener('click', () => {
 			const data = binding.value;
 			console.log(binding.value)
 			// 在此调用接口发送数据
-			
+			Vue.prototype.$addAnalysisData(data)
 			
 		}, false);
 	},
