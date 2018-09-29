@@ -20,7 +20,15 @@ export default {
 			}
 		})
 		
+		// data: 传递的参数
 		Vue.prototype.$addAnalysisData = function (data) { // 4、添加实例方法,通过this.$addAnalysisData()调用
+			//
+			try {
+				let data = JSON.parse(JSON.stringify(data));
+			} catch (err) {
+				console.error('input data is not json');
+				return
+			}
 			// 把数据存储到本地
 			let storage = window.localStorage; 
 			let analysisData = JSON.parse(storage.getItem('analysis'));
@@ -30,7 +38,9 @@ export default {
 				analysisData = [];
 			} 
 			analysisData.push(data);
-			storage.setItem('analysis',JSON.stringify(analysisData))
+			
+			let analysisData = JSON.stringify(analysisData);
+			storage.setItem('analysis',analysisData)
 		}
 	}
 }
